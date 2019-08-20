@@ -7,11 +7,18 @@ body {
 h2 {
   text-transform: uppercase;
 }
-button{
+button {
   height: 3rem;
-  background-color: tomato;
+  border-radius: 5px;
+  background-color: dodgerblue;
 }
-button[disabled]{
+
+button:hover {
+  height: 3rem;
+  border-radius: 5px;
+  background-color: skyblue;
+}
+button[disabled] {
   background-color: white;
 }
 #lists {
@@ -21,13 +28,13 @@ button[disabled]{
 #first,#second,#third {
   width: calc(100%/3 - 2rem);
   margin: 2rem;
-  border: solid 1px tomato;
+  border: solid 1px orange;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 .selected {
-  background-color: tomato;
+  background-color: lightskyblue;
 }
 
 ul {
@@ -37,5 +44,6 @@ ul {
 li {
   padding: 1rem;
   border-bottom: solid 1px white;
+  border-radius: 5px;
   cursor: pointer;
 }
